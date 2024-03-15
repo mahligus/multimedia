@@ -1,0 +1,63 @@
+.<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia</title>
+    <!-- favicon
+    .ico / .png / .gif / .jpg -> 512x512px
+    -->
+    <link rel="shortcut icon" href="favicon/salon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <h1>Multimedia HTML</h1>
+    </header>
+
+    <div>
+        <h2>Imagenes remotas (API)</h2>
+        <img src="https://picsum.photos/id/11/250/166" alt="300">
+    </div>
+    <hr>
+
+    <div>
+        <h2>Audio</h2>
+        <!-- Modo antiguo: <embed src="" type=""> 
+        <bgsound src="" loop autoplay>
+        -->
+        
+        <audio controls loop preload="auto" muted>
+            <!-- formatos: .mp3/ .wav / .ogg -->
+            <source src="audios/gallo.mp3">
+            <source src="audios/gallo.wav">
+            <source src="audios/gallo.ogg">
+        </audio>           
+    </div>
+    <hr>
+    <div>
+        <h2>Videos</h2>
+
+        <video controls muted loop preload="auto" poster="img/maradona2.jpg">
+            <!-- formatos: .mp4 / .ogv / .webm / .avi -->
+            <source src="videos/video.mp4">
+           
+        </video>
+    </div>
+
+    <hr>
+
+    <div>
+        <h2>Contenido Embebido (Youtube, Google Maps, Spotify)</h2>
+        <iframe width="560" height="230" src="https://www.youtube.com/embed/fDMq-NoTUqw" title="Afeitado tradicional Gillette Slim Adjustable" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <h3>Google Maps</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3119.9892893478604!2d-58.73318082465296!3d-38.557060576882634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x958f97e7596cc31b%3A0xf0e9e8c8c645d9d3!2sCCT%2C%20C.%2046%202637%2C%20B7630%20Necochea%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1710273897612!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <h3>Spotify</h3>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWWQRwui0ExPn?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+
+    
+</body>
+</html>
